@@ -1,0 +1,121 @@
+.header {
+    position: sticky;
+    height: 150px;
+    width: 1400px;
+    animation-name: header;
+    animation-duration: 20s;
+    animation-delay: 2s;
+}
+@keyframes header {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+.right {
+    width: 350px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 10px;
+    text-align: right;
+    animation-name: r;
+    animation-duration: 20s;
+}
+@keyframes r {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+.body {
+    width: 700px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    text-align: center;
+    animation-name: itemBody;
+    animation-duration: 20s;
+    animation-delay: 1s;
+}
+
+@keyframes itemBody {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; right:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+.left {
+    width: 350px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+    text-align: left;
+    animation-name: footer;
+    animation-duration: 20s;
+    animation-delay: 3s;
+}
+@keyframes left {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; right:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+.image_items {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer {
+    position: sticky;
+    height: 150px;
+    width: 1400px;
+    animation-name: footer;
+    animation-duration: 20s;
+    animation-delay: 3s;
+}
+@keyframes footer {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; right:200px; top:0px;}
+    50%  {background-color:blue; bottom:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:20px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+button {
+    opacity: 30%;
+    border-radius: 35px;
+    position: absolute;
+    top: 500px;
+    left: 640px;
+    background: darkred;
+    width: 120px;
+    height: 80px;
+    animation-name: example;
+    animation-duration: 8s;
+}
+
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+button:active {
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
